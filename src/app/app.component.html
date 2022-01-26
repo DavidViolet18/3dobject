@@ -1,1 +1,36 @@
 <canvas #canvas width="256" height="256"></canvas>
+<div>
+    <section>
+        <legend>Pommadier</legend>
+        <mat-form-field>
+            <mat-label>Type</mat-label>
+            <mat-select [formControl]="pommadierType">
+                <mat-option value="verre">Verre</mat-option>
+                <mat-option value="plastic">Plastique</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Couleur</mat-label>
+            <mat-select [formControl]="pommadierColor">
+                <mat-option value="red">Rouge</mat-option>
+                <mat-option value="green">Vert</mat-option>
+                <mat-option value="blue">Bleu</mat-option>
+                <mat-option value="black">Noir</mat-option>
+                <mat-option value="white">Blanc</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </section>
+    <section>
+        <legend>Couvercle</legend>
+        <mat-form-field>
+            <mat-label>Couleur</mat-label>
+            <mat-select [formControl]="couvercleColor">
+                <mat-option value="red">Rouge</mat-option>
+                <mat-option value="green">Vert</mat-option>
+                <mat-option value="blue">Bleu</mat-option>
+                <mat-option value="black">Noir</mat-option>
+                <mat-option value="white">Blanc</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </section>
+</div>
