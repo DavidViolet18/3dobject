@@ -73,7 +73,7 @@ class AppComponent {
         //const light = new Babylon.SpotLight("lightspot", new Babylon.Vector3(0,20,-10), new Babylon.Vector3(0,0,0), 1.2, 24, scene);
         // Environment Texture
         //var hdrTexture = new Babylon.HDRCubeTexture("/assets/room.hdr", scene, 512);
-        var hdrTexture = babylonjs__WEBPACK_IMPORTED_MODULE_0__["CubeTexture"].CreateFromPrefilteredData("/assets/environment.dds", scene);
+        var hdrTexture = babylonjs__WEBPACK_IMPORTED_MODULE_0__["CubeTexture"].CreateFromPrefilteredData("assets/environment.dds", scene);
         // Skybox
         /*var hdrSkybox = Babylon.MeshBuilder.CreateBox("hdrskybox", { size: 1000 }, scene);
         let hdrSkyboxMat = new Babylon.PBRMaterial("skybox", scene);
@@ -101,7 +101,7 @@ class AppComponent {
         glass.microSurface = 1;
         glass.reflectivityColor = new BABYLON.Color3(0.2, 0.2, 0.2);
         glass.albedoColor = new BABYLON.Color3(1, 1, 1);
-        babylonjs__WEBPACK_IMPORTED_MODULE_0__["SceneLoader"].Append("/assets/", "pommadier.gltf", scene, (scene) => {
+        babylonjs__WEBPACK_IMPORTED_MODULE_0__["SceneLoader"].Append("assets/", "pommadier.gltf", scene, (scene) => {
             let pommadier = scene.getMeshByName("pommadier");
             let couvercle = scene.getMeshByName("couvercle");
             let etiquette = scene.getMeshByName("etiquette");

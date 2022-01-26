@@ -30,7 +30,7 @@ export class AppComponent implements AfterViewInit {
 
     // Environment Texture
     //var hdrTexture = new Babylon.HDRCubeTexture("/assets/room.hdr", scene, 512);
-    var hdrTexture = Babylon.CubeTexture.CreateFromPrefilteredData("/assets/environment.dds", scene);
+    var hdrTexture = Babylon.CubeTexture.CreateFromPrefilteredData("assets/environment.dds", scene);
 
     // Skybox
     /*var hdrSkybox = Babylon.MeshBuilder.CreateBox("hdrskybox", { size: 1000 }, scene);
@@ -62,7 +62,7 @@ export class AppComponent implements AfterViewInit {
     glass.albedoColor = new BABYLON.Color3(1,1,1);
 
 
-    Babylon.SceneLoader.Append("/assets/", "pommadier.gltf", scene, (scene) => {
+    Babylon.SceneLoader.Append("assets/", "pommadier.gltf", scene, (scene) => {
       let pommadier = scene.getMeshByName("pommadier");
       let couvercle = scene.getMeshByName("couvercle");
       let etiquette = scene.getMeshByName("etiquette");
